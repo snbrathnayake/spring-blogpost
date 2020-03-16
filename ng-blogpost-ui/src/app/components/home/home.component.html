@@ -1,0 +1,52 @@
+<div class="container-sm mt-5">
+  <h3 class="mb-5">How to Write a Blog Post in 2020: The Ultimate Guide</h3>
+  <button class="btn btn-outline-success">Get the Templates</button>
+  <div class="para">
+    <div class="para-content">
+      You've probably heard how paramount blogging is to the success of your marketing. But it's important that you
+      learn how to start a blog and write blog posts for it so that each article supports your business.
+    </div>
+
+    <div class="para-content">
+      Without a blog, your SEO can tank, you'll have nothing to promote in social media, you'll have no clout with your
+      leads and customers, and you'll have fewer pages to put those valuable calls-to-action that generate inbound
+      leads.
+    </div>
+  </div>
+
+  <div class="blog-intro" *ngIf="posts">
+    <div class="row">
+      <h5>How to Become a Freelance Writer, Starting From Scratch</h5>
+      <p>If you’re interested in learning how to become a freelance writer so you can earn an amazing income from home,
+        this post is for you.</p>
+      <p>Imagine being your own boss, having nearly unlimited income potential, and being able to work from home.
+        Instead of slaving away in a cubicle all day, you rely on your creative talents – and your rigid work ethic – to
+        build the life of your dreams.</p>
+    </div>
+
+    <!-- post list -->
+    <div class="row container" *ngFor="let post of posts">
+      <div class="author col-md-2">
+        <a routerLink="/post/{{post.id}}">
+          <div class="author__image">
+            <img src="https://www.jennstrends.com/wp-content/uploads/2013/10/bad-profile-pic-2-768x768.jpeg" width="110"
+              height="100" alt="" typeof="foaf:Image">
+          </div>
+
+          <div class="author__text">{{post.username}}</div>
+        </a>
+      </div>
+      <div class="author-content col-md-10">
+        <h6>
+          <a routerLink="/post/{{post.id}}">{{post.title}}</a>
+        </h6>
+        <p [innerHTML]="post.content"></p>
+        <div>
+          <button class="btn btn-danger" type="button" routerLink="/post/{{post.id}}">Read More</button>
+        </div>
+        <hr>
+      </div>
+
+    </div>
+  </div>
+</div>

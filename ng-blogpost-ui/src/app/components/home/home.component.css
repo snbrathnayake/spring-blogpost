@@ -1,0 +1,46 @@
+.para {
+    padding: 20px 5px;
+}
+
+h3 {    color: #2d3e50; }
+
+h6 {
+    font-weight: 700;
+}
+
+li {
+    padding: 1em;
+    background-color: wheat;
+    margin-bottom: 1em;
+}
+
+.para-content {
+    font-family: inherit;
+    font-size: 12;
+    color: #010203;
+    padding-top: 10px;
+}
+
+.blog-intro {
+    padding: 2em;
+}
+.author__text {
+    padding: 0px 0px;
+    font-size: large;
+    font-weight: bold;
+    color: #5294d6;
+    text-align: center;
+}
+.author__image {
+    padding: 5px 0px;
+}
+.author__image > img {
+    /* border-radius: 20em; */
+    padding-right: 10px;
+}
+.author-content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9rem;
+    padding: 2px 0px;
+    margin-left: 0px;
+}

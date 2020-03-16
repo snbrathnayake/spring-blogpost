@@ -1,0 +1,12 @@
+.from-signin {
+    justify-content :center;
+    background-color:#79c8ff;
+    padding: 2em;
+    border: 1px solid #eeeeee;
+    min-height: 20%;
+    border-radius: 1px;
+}
+
+.img {
+    width: 100%;
+}

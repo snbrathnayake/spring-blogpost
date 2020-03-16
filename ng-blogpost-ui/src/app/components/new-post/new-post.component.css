@@ -1,0 +1,13 @@
+.create-post-content {
+  margin-top: 5em;
+}
+
+h4 {
+  margin: 1em 0;
+}
+
+.post-title,
+.post-content {
+  font-weight: 700;
+  color: #52667a;
+}

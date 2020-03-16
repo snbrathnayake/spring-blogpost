@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="container-fluid">
+    <div class="row header-data">
+      <!-- Title -->
+      <div class="col-md-6">
+        <h1 class="title"><a [routerLink]="['/home']" class="title">Spring Blog v1.0.0</a></h1>
+      </div>
+      <div class="col-md-6">
+        <div class="col" *ngIf="auth.isAuthentication">
+          <a [routerLink]="['/new-post']" class="new-post btn btn-outline-info" >New Post</a>
+          <a [routerLink]="['/blog-hubs']" class="logout btn btn-outline-warning" (click)="logout()">Logout</a>
+        </div>
+        <!-- Login -->
+        <div class="col" *ngIf="!auth.isAuthentication">
+          <a [routerLink]="['/register']" class="register-link btn btn-default">Register</a>
+          <a [routerLink]="['/login']" class="login-link btn btn-default">Login</a>
+        </div>
+      </div>
+     
+    </div>
+  </div>

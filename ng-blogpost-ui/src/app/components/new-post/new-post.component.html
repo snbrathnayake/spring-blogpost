@@ -1,0 +1,22 @@
+<div class="create-post-content">
+  <div class="container">
+    <div>
+      <h4 class="">Create New Post</h4>
+    </div>
+   
+    <form class="from-post" [formGroup]="postForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="usrename" class="post-title">Heading</label>
+        <input type="text" formControlName="title" class="form-control" placeholder="Enter heading" id="title"
+          autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label class="post-content">Content</label>
+        <editor formControlName="content" [init]="{plugins: 'link'}"></editor>
+      </div>
+
+      <button type="submit" class="btn btn-lg btn-primary btn-block">Publish</button>
+    </form>
+
+  </div>
+</div>

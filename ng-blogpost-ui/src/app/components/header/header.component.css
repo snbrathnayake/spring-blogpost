@@ -1,0 +1,26 @@
+.header {
+    padding: 0.5em 1.5em;
+    background-color: #52667a;
+}
+
+.header-data {
+    padding-top: 5px;
+}
+.title {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    float: left;
+}
+
+.logout ,.new-post {
+    float: right;
+    margin-right: 5px;
+}
+
+
+.login-link,.register-link {
+    float: right;
+    text-decoration: none;
+    color: white;
+}

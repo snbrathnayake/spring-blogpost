@@ -1,0 +1,30 @@
+<div class="container justify-content center mt-5">
+  <form class="from-signup" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <h3 class="h3 mb-3 font-weight-normal">Please Register</h3>
+
+    <div class="form-group">
+      <label for="usrename" class="sr-only">Username</label>
+      <!-- [formControlName]="'username'" -->
+      <input type="text" formControlName="username" class="form-control" placeholder="Enter username" id="username"
+        autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label for="email" class="sr-only">Email address:</label>
+      <input type="email" formControlName="email" class="form-control" placeholder="Enter email" id="email"
+        autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label for="password" class="sr-only">Password:</label>
+      <input type="password" formControlName="password" class="form-control" placeholder="Enter password" id="password"
+        autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label for="confirmpassword" class="sr-only">Confirm Password:</label>
+      <input type="password" formControlName="confirmpassword" class="form-control" placeholder="Confirm Password"
+        id="confirmpassword" autocomplete="off">
+    </div>
+
+    <button type="submit" class="btn btn-lg btn-primary btn-block">Sign Up</button>
+  </form>
+
+</div>

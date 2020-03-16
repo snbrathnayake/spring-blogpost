@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: "f4f4f4";
+    font-family: "Arial","Trebuchet MS", Helvetica, sans-serif !important;
+    color: "#666666";
+    font-weight: 100;
+    /* font-size: 12px; */
+    text-rendering: optimizeLegibility;
+}
